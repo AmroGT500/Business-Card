@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   transition: background-color 0.3s, color 0.3s;
   position: relative;
 }
@@ -42,48 +42,58 @@ body.dark-mode {
 .container {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 20px 30px;
-  gap: 30px;
+  padding: 60px 20px;
 }
 
 .profile-box {
   background-color: inherit;
-  border: 2px solid currentColor;
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  border: 1px solid currentColor;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-content {
   padding: 24px 36px;
-  border-radius: 10px;
-  width: 350px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  text-align: left;
-  line-height: 1.6;
+  flex-grow: 1;
 }
 
-.profile-box h1 {
+.name {
   font-size: 26px;
-  margin-bottom: 4px;
+  font-weight: 600; /* Semibold */
+  margin-bottom: 2px;
 }
 
-.profile-box h2 {
+.title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.company {
   font-size: 18px;
-  margin-bottom: 16px;
-  color: inherit;
+  margin-bottom: 12px;
 }
 
-.profile-box hr {
+hr {
   margin: 10px 0 15px;
   border: none;
   border-top: 1px solid currentColor;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
-.profile-box p {
+p {
   font-size: 14px;
   margin-bottom: 8px;
 }
 
-.profile-box a {
+a {
   color: inherit;
   text-decoration: underline;
   font-size: 14px;
@@ -92,9 +102,7 @@ body.dark-mode {
 .banner {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  max-width: 800px;
+  border-top: 1px solid currentColor;
 }
 
 .highlight {
