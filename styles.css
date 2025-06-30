@@ -50,8 +50,8 @@ body.dark-mode {
 .profile-box {
   background-color: inherit;
   width: 100%;
-  max-width: 900px;
-  height: 600px;
+  max-width: 600px;
+  max-height: 450px;
   border: 1px solid currentColor;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
   display: flex;
