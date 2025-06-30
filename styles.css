@@ -101,7 +101,8 @@ a {
 
 .banner {
   width: 100%;
-  height: auto;
+  height: 100px; /* Fixed height */
+  object-fit: cover; /* This will make the image fill the width and maintain its aspect ratio */
   border-top: 1px solid currentColor;
 }
 
