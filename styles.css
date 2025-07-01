@@ -11,13 +11,13 @@ body {
 }
 
 body.light-mode {
-  background-color: #f5f5f5;
+  background-color: #ffffff;
   color: #1f1f1f;
 }
 
 body.dark-mode {
   background-color: #1f1f1f;
-  color: #f5f5f5;
+  color: #ffffff;
 }
 
 .toggle-switch {
@@ -40,8 +40,8 @@ body.dark-mode {
 }
 
 .container {
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 60px 20px;
